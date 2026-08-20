@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Gráfica — Personalização e Impressão Rápida</title>
+<meta name="description" content="Cartões de visita, crachás, cardápios, cartazes, estamparia de camisetas, bonés e sublimação de canecas. Peça seu orçamento com a Custom Gráfica.">
+
+<link rel="icon" type="image/x-icon" href="favicon_icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#EC248F">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Work+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="#top" class="brand">
+      <img src="logo_full.png" alt="Custom Gráfica">
+      <span style="font-family:'Big Shoulders Display'; font-weight:800; font-size:22px; letter-spacing:.01em; text-transform:uppercase;">Custom Gráfica</span>
+    </a>
+    <ul class="navlinks" id="navlinks">
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#processo">Como funciona</a></li>
+      <li><a href="#diferenciais">Diferenciais</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><a class="navcta" href="https://wa.me/258864952265" target="_blank" rel="noopener">Peça um orçamento</a></li>
+    </ul>
+    <button class="navcta desktop-only" style="display:none"></button>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow" style="color:var(--magenta)"><span class="regmark" style="color:var(--magenta)"></span> Papelaria · Estamparia · Sublimação</span>
+        <h1 class="reveal">Tudo que a<br>sua marca<br><span class="line2">precisa imprimir</span></h1>
+        <p class="lead reveal">Da arte final à entrega: cartões de visita, crachás, cardápios, cartazes, camisetas, bonés e canecas personalizadas — produzidos com capricho, prazo curto e acabamento de gráfica de verdade.</p>
+        <div class="hero-ctas reveal">
+          <a href="https://wa.me/258864952265" target="_blank" rel="noopener" class="btn btn-solid">
+            Chamar no WhatsApp
+          </a>
+          <a href="#servicos" class="btn btn-outline">Ver serviços</a>
+        </div>
+        <div class="hero-stats reveal">
+          <div><strong>4</strong><span>Cores de produção CMYK</span></div>
+          <div><strong>+30</strong><span>Itens personalizáveis</span></div>
+          <div><strong>100%</strong><span>Arte revisada antes de imprimir</span></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="blob b1"></div>
+        <div class="blob b2"></div>
+        <div class="blob b3"></div>
+        <img src="logo_full.png" alt="Logo Custom Gráfica — respingo de tintas ciano, magenta, amarelo e preto formando as letras CG">
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Cartão de visita</span><span>Crachás</span><span>Cartão de agradecimento</span><span>Cardápio</span><span>Indicador de mesa</span><span>Cartazes</span><span>Estampa de camiseta</span><span>Sacolas</span><span>Bonés</span><span>Canecas por sublimação</span>
+      <span>Cartão de visita</span><span>Crachás</span><span>Cartão de agradecimento</span><span>Cardápio</span><span>Indicador de mesa</span><span>Cartazes</span><span>Estampa de camiseta</span><span>Sacolas</span><span>Bonés</span><span>Canecas por sublimação</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="section" id="servicos">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Catálogo de produção</span>
+        <h2>Nossos serviços</h2>
+        <p>Organizados por linha de produção — cada categoria tem sua cor de identificação, do jeito que a gente separa as chapas de impressão.</p>
+      </div>
+
+      <div class="cat-nav" role="tablist" aria-label="Filtrar categorias">
+        <button class="cat-chip active" data-filter="all">Tudo</button>
+        <button class="cat-chip" data-filter="papelaria">Papelaria</button>
+        <button class="cat-chip" data-filter="negocio">Sinalização</button>
+        <button class="cat-chip" data-filter="vestuario">Estamparia</button>
+        <button class="cat-chip" data-filter="sublimacao">Sublimação</button>
+      </div>
+
+      <!-- Papelaria -->
+      <div class="cat-block" data-cat="papelaria">
+        <div class="cat-title">
+          <span class="swatch" style="background:var(--magenta)"></span>
+          <h3>Papelaria & identidade</h3>
+          <span class="count">01 — CHAPA MAGENTA</span>
+        </div>
+        <div class="card-grid">
+          <div class="card">
+            <span class="tag">300G · VERNIZ</span>
+            <div class="icon-wrap" style="background:#FDE7F2">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="20" height="12" rx="2" stroke="#EC248F" stroke-width="1.6"/><circle cx="7.2" cy="12" r="1.9" stroke="#EC248F" stroke-width="1.6"/><path d="M12.5 10h7M12.5 14h5" stroke="#EC248F" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </div>
+            <h4>Cartões de visita</h4>
+            <p>Layout exclusivo, papéis especiais, verniz localizado e laminação fosca ou brilho.</p>
+          </div>
+          <div class="card">
+            <span class="tag">PVC · CORDÃO</span>
+            <div class="icon-wrap" style="background:#FDE7F2">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="6" y="4" width="12" height="16" rx="2" stroke="#EC248F" stroke-width="1.6"/><circle cx="12" cy="9" r="2.2" stroke="#EC248F" stroke-width="1.6"/><path d="M9 15h6" stroke="#EC248F" stroke-width="1.6" stroke-linecap="round"/><path d="M10 4V2.4M14 4V2.4" stroke="#EC248F" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </div>
+            <h4>Crachás personalizados</h4>
+            <p>Para empresas, eventos e escolas — com foto, cargo, QR code e cordão à sua escolha.</p>
+          </div>
+          <div class="card">
+            <span class="tag">CONVITE · KRAFT</span>
+            <div class="icon-wrap" style="background:#FDE7F2">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v13H4z" stroke="#EC248F" stroke-width="1.6"/><path d="M4 6l8 6 8-6" stroke="#EC248F" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 19l3-3.4L15 19" stroke="#EC248F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h4>Cartões de agradecimento</h4>
+            <p>Para clientes, casamentos e eventos especiais — texto e ilustração sob medida.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sinalização -->
+      <div class="cat-block" data-cat="negocio">
+        <div class="cat-title">
+          <span class="swatch" style="background:var(--cyan)"></span>
+          <h3>Sinalização para o seu negócio</h3>
+          <span class="count">02 — CHAPA CIANO</span>
+        </div>
+        <div class="card-grid">
+          <div class="card">
+            <span class="tag">PLASTIFICADO</span>
+            <div class="icon-wrap" style="background:#E3F6FF">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="5" y="2.5" width="14" height="19" rx="1.6" stroke="#00ADEE" stroke-width="1.6"/><path d="M8 7h8M8 10.5h8M8 14h5" stroke="#00ADEE" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </div>
+            <h4>Cardápio de restaurante</h4>
+            <p>Cardápios laminados, resistentes a manuseio, com fotos e organização por categoria.</p>
+          </div>
+          <div class="card">
+            <span class="tag">MESA · TENDA</span>
+            <div class="icon-wrap" style="background:#E3F6FF">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M6 20V9.5L12 4l6 5.5V20" stroke="#00ADEE" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 20v-5h4v5" stroke="#00ADEE" stroke-width="1.6"/></svg>
+            </div>
+            <h4>Indicador de mesa</h4>
+            <p>Numeração e identificação de mesas em acabamento tenda, para eventos e salões.</p>
+          </div>
+          <div class="card">
+            <span class="tag">A3 · A2 · A1</span>
+            <div class="icon-wrap" style="background:#E3F6FF">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="1.4" stroke="#00ADEE" stroke-width="1.6"/><circle cx="9" cy="9" r="1.8" stroke="#00ADEE" stroke-width="1.6"/><path d="M4 16l4.5-4 4 3.5L17 11l3 4" stroke="#00ADEE" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </div>
+            <h4>Cartazes & design</h4>
+            <p>Criação e impressão de cartazes promocionais, do rascunho da ideia ao arquivo final.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Estamparia -->
+      <div class="cat-block" data-cat="vestuario">
+        <div class="cat-title">
+          <span class="swatch" style="background:var(--yellow)"></span>
+          <h3>Estamparia têxtil</h3>
+          <span class="count">03 — CHAPA AMARELA</span>
+        </div>
+        <div class="card-grid">
+          <div class="card">
+            <span class="tag">SILK · DTF</span>
+            <div class="icon-wrap" style="background:#FFF6D6">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M8 3 4 6.5 6.5 9l1.5-1v11h8V8l1.5 1L20 6.5 16 3c0 1.7-1.8 3-4 3s-4-1.3-4-3Z" stroke="#C9A100" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </div>
+            <h4>Estampagem de camisetas</h4>
+            <p>Estampa em silk ou DTF, uniformes de empresa, times, eventos ou uso pessoal.</p>
+          </div>
+          <div class="card">
+            <span class="tag">TNT · ALGODÃO</span>
+            <div class="icon-wrap" style="background:#FFF6D6">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M6 8h12l1 12H5L6 8Z" stroke="#C9A100" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 8V6a3 3 0 0 1 6 0v2" stroke="#C9A100" stroke-width="1.6"/></svg>
+            </div>
+            <h4>Sacolas & camisolas</h4>
+            <p>Sacolas personalizadas para lojas e eventos, além de camisolas e regatas sob encomenda.</p>
+          </div>
+          <div class="card">
+            <span class="tag">BORDADO · SILK</span>
+            <div class="icon-wrap" style="background:#FFF6D6">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 12a8 8 0 0 1 16 0" stroke="#C9A100" stroke-width="1.6"/><path d="M4 12h16v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2Z" stroke="#C9A100" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </div>
+            <h4>Bonés personalizados</h4>
+            <p>Para empresas, equipes e uso pessoal — bordado ou estampa, cores e modelos variados.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sublimação -->
+      <div class="cat-block" data-cat="sublimacao">
+        <div class="cat-title">
+          <span class="swatch" style="background:var(--ink)"></span>
+          <h3>Sublimação</h3>
+          <span class="count">04 — CHAPA PRETA</span>
+        </div>
+        <div class="card-grid">
+          <div class="card">
+            <span class="tag">CERÂMICA · MÁGICA</span>
+            <div class="icon-wrap" style="background:#EDEBEA">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M5 6h9v11a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V6Z" stroke="#131214" stroke-width="1.6"/><path d="M14 9h2a2.5 2.5 0 0 1 0 5h-2" stroke="#131214" stroke-width="1.6"/></svg>
+            </div>
+            <h4>Canecas personalizadas</h4>
+            <p>Fotos, frases e logotipos sublimados com alta durabilidade — comuns ou mágicas (efeito térmico).</p>
+          </div>
+          <div class="card">
+            <span class="tag">OUTROS ITENS</span>
+            <div class="icon-wrap" style="background:#EDEBEA">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="#131214" stroke-width="1.6"/><path d="M12 3.5v3M12 17.5v3M3.5 12h3M17.5 12h3" stroke="#131214" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </div>
+            <h4>Squeezes, chaveiros & mais</h4>
+            <p>Praticamente qualquer superfície revestida pode receber sua arte via sublimação.</p>
+          </div>
+          <div class="card">
+            <span class="tag">KIT PRESENTE</span>
+            <div class="icon-wrap" style="background:#EDEBEA">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="9" width="17" height="11" rx="1.4" stroke="#131214" stroke-width="1.6"/><path d="M3.5 13h17M12 9v11" stroke="#131214" stroke-width="1.6"/><path d="M8 9c-1.8 0-2.5-3.5 0-3.5S12 9 12 9s1.8-3.5 4-3.5 1.8 3.5 0 3.5" stroke="#131214" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </div>
+            <h4>Kits corporativos</h4>
+            <p>Combine caneca, chaveiro e brindes sublimados num kit exclusivo com a cara da sua marca.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section process" id="processo">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Do arquivo à entrega</span>
+        <h2 style="color:#fff">Como funciona o pedido</h2>
+        <p>Três etapas, sem burocracia — igual passar uma folha pela impressora.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="num">01</div>
+          <h4>Envie sua ideia</h4>
+          <p>Manda a arte pronta ou nos conta o que precisa pelo WhatsApp — a gente também cria o layout do zero.</p>
+        </div>
+        <div class="step">
+          <div class="num">02</div>
+          <h4>Aprova a prova</h4>
+          <p>Você recebe uma prévia digital, ajusta cores e textos e só liberamos a produção depois do seu OK.</p>
+        </div>
+        <div class="step">
+          <div class="num">03</div>
+          <h4>Produção e entrega</h4>
+          <p>Imprimimos, conferimos item por item e entregamos no prazo combinado — retirada ou envio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section" id="diferenciais">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Por que a Custom Gráfica</span>
+        <h2>Feito para durar<br>e para impressionar</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="regmark"></div>
+          <h4>Orçamento sem enrolação</h4>
+          <p>Resposta rápida pelo WhatsApp, com valores claros antes de fechar o pedido.</p>
+        </div>
+        <div class="why-item">
+          <div class="regmark"></div>
+          <h4>Materiais de qualidade</h4>
+          <p>Papéis, tecidos e insumos selecionados para o acabamento final ficar à altura da sua marca.</p>
+        </div>
+        <div class="why-item">
+          <div class="regmark"></div>
+          <h4>Pessoa física ou empresa</h4>
+          <p>Do pedido único para presentear alguém ao lote fechado para uniformizar sua equipe.</p>
+        </div>
+        <div class="why-item">
+          <div class="regmark"></div>
+          <h4>Revisão antes de imprimir</h4>
+          <p>Nada vai para a máquina sem sua aprovação de cores, texto e posicionamento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="wrap" style="margin-bottom:96px;">
+    <div class="cta-band">
+      <div>
+        <span class="eyebrow" style="color:#fff; opacity:.85;">Vamos imprimir isso?</span>
+        <h2 style="margin-top:14px;">Peça agora o orçamento do seu material</h2>
+      </div>
+      <a href="https://wa.me/258864952265" target="_blank" rel="noopener" class="btn btn-solid">Falar no WhatsApp</a>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contato">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="logo_full (1).png" alt="Custom Gráfica">
+        <p>Sua gráfica de confiança para papelaria, sinalização, estamparia têxtil e sublimação — tudo personalizado do seu jeito.</p>
+      </div>
+      <div>
+        <h5>Serviços</h5>
+        <ul>
+          <li><a href="#servicos">Cartões de visita</a></li>
+          <li><a href="#servicos">Crachás</a></li>
+          <li><a href="#servicos">Cardápios & cartazes</a></li>
+          <li><a href="#servicos">Camisetas & bonés</a></li>
+          <li><a href="#servicos">Sublimação</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Empresa</h5>
+        <ul>
+          <li><a href="#processo">Como funciona</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contato</h5>
+        <ul>
+          <li><a href="https://wa.me/258864952265" target="_blank" rel="noopener">+258 86 495 2265</a></li>
+          <li><a href="www.instagram.com/custom__grafica/?hl=pt-br">Instagram</a></li>
+          <li><a href="www.facebook.com/CustomGrafica.mz">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Custom Gráfica — Todos os direitos reservados</span>
+      
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/258864952265" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 32 32" fill="#fff"><path d="M16.02 3C9.4 3 4 8.38 4 15c0 2.4.7 4.63 1.9 6.5L4 29l7.68-1.85A11.9 11.9 0 0 0 16.02 27C22.64 27 28 21.62 28 15S22.64 3 16.02 3Zm0 21.7c-2 0-3.86-.55-5.46-1.5l-.39-.23-4.56 1.1 1.13-4.45-.25-.4A9.63 9.63 0 0 1 6.3 15c0-5.36 4.36-9.7 9.72-9.7 5.36 0 9.7 4.34 9.7 9.7 0 5.36-4.34 9.7-9.7 9.7Zm5.3-7.27c-.29-.15-1.7-.84-1.96-.93-.26-.1-.45-.15-.64.14-.19.29-.74.93-.9 1.12-.17.19-.33.21-.62.07-.29-.15-1.22-.45-2.32-1.43-.86-.76-1.44-1.7-1.6-1.99-.17-.29-.02-.44.13-.59.13-.13.29-.33.44-.5.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.15-.64-1.55-.88-2.12-.23-.56-.47-.48-.64-.49-.17 0-.36-.01-.55-.01-.19 0-.5.07-.76.36-.26.29-1 .98-1 2.38 0 1.4 1.02 2.76 1.16 2.95.14.19 2 3.06 4.85 4.29.68.29 1.21.47 1.62.6.68.22 1.3.19 1.79.11.55-.08 1.7-.7 1.94-1.37.24-.67.24-1.25.17-1.37-.07-.12-.26-.19-.55-.34Z"/></svg>
+</a>
+  <script src="script.js"></script>
+</body>
+</html>
