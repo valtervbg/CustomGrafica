@@ -42,6 +42,72 @@
 
 <main id="top">
 
+  <!-- MAIN SLIDER -->
+  <section class="main-slider" aria-roledescription="carrossel" aria-label="Trabalhos em destaque">
+    <div class="slider-viewport" id="sliderViewport">
+      <ul class="slider-track" id="sliderTrack">
+        <li class="slide">
+          <div class="slide-photo">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="13" r="3.4" stroke="currentColor" stroke-width="1.4"/></svg>
+            <span class="slot-file">slide-01-cartoes.jpg</span>
+          </div>
+          <div class="slide-caption">
+            <span class="eyebrow" style="color:#fff"><span class="regmark" style="color:#fff"></span> 01 / Papelaria</span>
+            <h2>Cartões que abrem<br>a primeira porta</h2>
+            <p>Papel, verniz e acabamento escolhidos a dedo para a sua marca.</p>
+          </div>
+        </li>
+        <li class="slide">
+          <div class="slide-photo">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="13" r="3.4" stroke="currentColor" stroke-width="1.4"/></svg>
+            <span class="slot-file">slide-02-cardapios.jpg</span>
+          </div>
+          <div class="slide-caption">
+            <span class="eyebrow" style="color:#fff"><span class="regmark" style="color:#fff"></span> 02 / Sinalização</span>
+            <h2>Cardápios e cartazes<br>que vendem sozinhos</h2>
+            <p>Plastificados, resistentes ao dia a dia do balcão.</p>
+          </div>
+        </li>
+        <li class="slide">
+          <div class="slide-photo">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="13" r="3.4" stroke="currentColor" stroke-width="1.4"/></svg>
+            <span class="slot-file">slide-03-camisetas.jpg</span>
+          </div>
+          <div class="slide-caption">
+            <span class="eyebrow" style="color:#fff"><span class="regmark" style="color:#fff"></span> 03 / Estamparia</span>
+            <h2>Uniformes com a cara<br>da sua equipe</h2>
+            <p>Silk, DTF ou bordado — de uma camiseta a um lote fechado.</p>
+          </div>
+        </li>
+        <li class="slide">
+          <div class="slide-photo">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="13" r="3.4" stroke="currentColor" stroke-width="1.4"/></svg>
+            <span class="slot-file">slide-04-canecas.jpg</span>
+          </div>
+          <div class="slide-caption">
+            <span class="eyebrow" style="color:#fff"><span class="regmark" style="color:#fff"></span> 04 / Sublimação</span>
+            <h2>Canecas e brindes<br>prontos para presentear</h2>
+            <p>Fotos e frases sublimadas com alta durabilidade.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <button class="slider-arrow prev" id="sliderPrev" aria-label="Slide anterior">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="slider-arrow next" id="sliderNext" aria-label="Próximo slide">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
+    <div class="slider-dots" id="sliderDots" role="tablist" aria-label="Selecionar slide">
+      <button class="slider-dot active" data-index="0" role="tab" aria-selected="true" aria-label="Slide 1"></button>
+      <button class="slider-dot" data-index="1" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+      <button class="slider-dot" data-index="2" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+      <button class="slider-dot" data-index="3" role="tab" aria-selected="false" aria-label="Slide 4"></button>
+    </div>
+  </section>
+
   <!-- HERO -->
   <section class="hero">
     <div class="wrap hero-grid">

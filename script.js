@@ -32,6 +32,74 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
+// ---------- main slider: 4 full-width slides, autoplay + arrows + dots ----------
+(function initMainSlider() {
+  const viewport = document.getElementById('sliderViewport');
+  const track = document.getElementById('sliderTrack');
+  const dotsWrap = document.getElementById('sliderDots');
+  const prevBtn = document.getElementById('sliderPrev');
+  const nextBtn = document.getElementById('sliderNext');
+  if (!viewport || !track) return;
+
+  const slides = Array.from(track.children);
+  const dots = dotsWrap ? Array.from(dotsWrap.children) : [];
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const AUTOPLAY_MS = 5500;
+
+  let index = 0;
+  let timer = null;
+
+  function goTo(i) {
+    index = (i + slides.length) % slides.length;
+    track.style.transform = `translateX(-${index * 100}%)`;
+    dots.forEach((d, di) => {
+      d.classList.toggle('active', di === index);
+      d.setAttribute('aria-selected', di === index ? 'true' : 'false');
+    });
+  }
+
+  function next() { goTo(index + 1); }
+  function prev() { goTo(index - 1); }
+
+  function startAutoplay() {
+    if (prefersReducedMotion) return;
+    stopAutoplay();
+    timer = setInterval(next, AUTOPLAY_MS);
+  }
+  function stopAutoplay() { if (timer) clearInterval(timer); timer = null; }
+
+  prevBtn && prevBtn.addEventListener('click', () => { prev(); startAutoplay(); });
+  nextBtn && nextBtn.addEventListener('click', () => { next(); startAutoplay(); });
+  dots.forEach((d, di) => d.addEventListener('click', () => { goTo(di); startAutoplay(); }));
+
+  const slider = viewport.closest('.main-slider');
+  slider.addEventListener('mouseenter', stopAutoplay);
+  slider.addEventListener('mouseleave', startAutoplay);
+
+  // swipe support
+  let touchStartX = 0;
+  viewport.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+    stopAutoplay();
+  }, { passive: true });
+  viewport.addEventListener('touchend', (e) => {
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if (dx > 40) prev();
+    else if (dx < -40) next();
+    startAutoplay();
+  });
+
+  // keyboard support when the slider has focus
+  slider.setAttribute('tabindex', '0');
+  slider.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') { prev(); startAutoplay(); }
+    if (e.key === 'ArrowRight') { next(); startAutoplay(); }
+  });
+
+  goTo(0);
+  startAutoplay();
+})();
+
 // ---------- banner carousel: auto-scroll + drag ----------
 (function initBannerCarousel() {
   const strip = document.getElementById('bannerStrip');
